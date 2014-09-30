@@ -7,3 +7,16 @@ See:
 https://github.com/jyucsiro/sissvoc
 https://github.com/SISS/sissvoc
 https://github.com/epimorphics/elda
+
+
+Linux Quick-start
+-----------------
+
+Pre-requisites:
+* git
+* python
+* bash
+* sed
+* openjdk-7
+
+Run ./package-sissvoc-vanilla.sh
