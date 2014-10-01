@@ -16,14 +16,14 @@ See:
 Linux Quick-start
 -----------------
 
-Pre-requisites:
+#### Pre-requisites:
 * git
 * python 2.7+
 * bash
 * sed
 * openjdk-7
 
-## Steps
+#### Steps
 1. Navigate to the sissvoc-package repo directory.
 2. Run ./package-sissvoc-vanilla.sh
 3. This should produce and package up sissvoc into sissvoc.war which you can deploy in an Application Server such as Tomcat7.
@@ -32,19 +32,19 @@ Pre-requisites:
 Windows Quick-start
 -------------------
 
-## Pre-requisites
+#### Pre-requisites
 * Git for Windows (recommend 1.9+ ; see http://git-scm.com/download/win)
 * Maven (recommend 3.2+; see http://maven.apache.org/download.cgi)
 * JDK 1.7+ (recommend Sun JDK ; see http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
 * python 2.7+
 
 
-## Notes:
+#### Notes:
 - Git for Windows will include Bash for Windows. Ensure the Git bin is added to the Windows environment PATH (e.g. by going to Control Panel/System and Security/System/Advanced system settings).
 - Ensure Maven bin dir is  added to the Windows environment PATH
 - Ensure JDK 1.7 bin dir is added to the Windows environment PATH. Additionally, ensure JAVA_HOME is defined as a Windows environment variable and pointed to the JDK dir.
 
-## Steps:
+#### Steps:
 1. Navigate to the sissvoc-package repo directory.
 2. Execute package-sissvoc-vanilla.bat 
 3. This should produce and package up sissvoc into sissvoc.war which you can deploy in an Application Server such as Tomcat7.
@@ -55,10 +55,10 @@ Running sissvoc via jetty-runner
 
 Included in this repo is the jetty-runner. This can be used to run the packaged SISSVoc locally. 
 
-##Pre-requisites:
+#### Pre-requisites:
 * Java 1.7+
 
-##To run sissvoc locally
+#### To run sissvoc locally
 
 Linux
 '''
