@@ -61,13 +61,13 @@ Included in this repo is the jetty-runner. This can be used to run the packaged 
 #### To run sissvoc locally
 
 Linux
-'''
+```
    $ java -jar jar/jetty-runner.jar --path /sissvoc sissvoc.war
-'''   
+```   
 Windows (for convenience we've written sissvoc-runner.bat)
-'''
+```
    $ java -jar jar\jetty-runner.jar --path /sissvoc sissvoc.war
-'''   
+```   
    
 Then navigate to http://localhost:8080/sissvoc/meta/api for the list of endpoints available.
 
