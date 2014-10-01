@@ -1,4 +1,5 @@
 #!/bin/bash
+## This script downloads  elda and sissvoc releases, unpacks and packages the relevant files into sissvoc.war
 set -x #echo on
 #clone and build elda - for some reason in windows, mvn doesn't want to build elda from the git repo tag. 
 #git clone https://github.com/epimorphics/elda.git

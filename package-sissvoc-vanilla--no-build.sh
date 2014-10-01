@@ -1,4 +1,6 @@
 #!/bin/bash
+## This script assumes that elda and sissvoc releases have been downloaded and unpacked as per the package-sissvoc-vanilla.sh script.
+## This script allows users to modify/add/configure files to the elda/sissvoc releases and package into sissvoc.war
 set -x #echo on
 cd sissvoc
 cd build
