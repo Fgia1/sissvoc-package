@@ -1,0 +1,1 @@
+sh.exe --login -i -- package-sissvoc-vanilla.sh

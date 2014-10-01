@@ -1,29 +1,25 @@
 #!/bin/bash
 set -x #echo on
-#clone and build elda
-git clone https://github.com/epimorphics/elda.git
+#clone and build elda - for some reason in windows, mvn doesn't want to build elda from the git repo tag. 
+#git clone https://github.com/epimorphics/elda.git
+#cd elda
+#git checkout tags/elda-1.2.35
+#mvn package
+#cd ..
+#WORKAROUND FIX - download elda 1.2.35 release and unzip
+curl -L -O https://github.com/epimorphics/elda/archive/elda-1.2.35.zip
+unzip elda-1.2.35.zip
+mv elda-elda-1.2.35 elda
 cd elda
-git checkout tags/elda-1.2.35
 mvn package
 cd ..
-#clone and build sissvoc vanilla
-git clone https://github.com/jyucsiro/sissvoc.git
+#clone and build sissvoc vanilla - 
+#WORKAROUND -  download sissvoc-vanilla-v0.2 release and unzip
+#git clone https://github.com/jyucsiro/sissvoc.git
+curl -L -O https://github.com/jyucsiro/sissvoc/archive/sissvoc-vanilla-v0.2.zip
+unzip sissvoc-vanilla-v0.2.zip
+mv sissvoc-sissvoc-vanilla-v0.2 sissvoc
 cd sissvoc
-git checkout vanilla-sissvoc
-cd build
-#build default and pizza sissvoc configs
-#cp ../../configs/pizza-config.properties ../../configs/default-config.properties  .
-python gen_sissvoc3_config.py --config=../../configs/default-config.properties default_sissvoc.ttl
-python gen_sissvoc3_config.py --config=../../configs/pizza-config.properties pizza_sissvoc.ttl
-cd ../..
-#create sissvoc package and output war file for application server
-mkdir sissvoc-pkg
-cd sissvoc-pkg
-cp -rf ../elda/elda-common/target/elda-common/* .
-cp -rf ../elda/elda-assets/target/elda-assets lda-assets
-cp -rf ../sissvoc/resources/ ../sissvoc/default-landing/ .
-rm resources/default/config/*
-cp ../sissvoc/build/default_sissvoc.ttl ../sissvoc/build/pizza_sissvoc.ttl resources/default/config
-sed -i "s/<param-value>\/etc\/elda\/conf.d\/{APP}\/\*.ttl<\/param-value>/<param-value>resources\/default\/config\/\*.ttl<\/param-value>/g" WEB-INF/web.xml
-jar -cvf sissvoc.war *
-mv sissvoc.war ..
+cd ..
+bash -c package-sissvoc-vanilla--no-build.sh
+
