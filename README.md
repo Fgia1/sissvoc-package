@@ -24,18 +24,18 @@ Linux Quick-start
 * openjdk-7
 
 #### Steps
-1. Navigate to the sissvoc-package repo directory.
-2. Run ./package-sissvoc-vanilla.sh
-3. This should produce and package up sissvoc into sissvoc.war which you can deploy in an Application Server such as Tomcat7.
+1. Navigate to the `sissvoc-package` repo directory.
+2. Run `./package-sissvoc-vanilla.sh`
+3. This should produce and package up sissvoc into `sissvoc.war` which you can deploy in an Application Server such as Tomcat7.
 
 
 Windows Quick-start
 -------------------
 
 #### Pre-requisites
-* Git for Windows (recommend 1.9+ ; see http://git-scm.com/download/win)
-* Maven (recommend 3.2+; see http://maven.apache.org/download.cgi)
-* JDK 1.7+ (recommend Sun JDK ; see http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+* Git for Windows (recommend 1.9+ ; [download here](http://git-scm.com/download/win))
+* Maven (recommend 3.2+; [download here](http://maven.apache.org/download.cgi))
+* JDK 1.7+ (recommend [Sun JDK](see http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html))
 * python 2.7+
 
 
@@ -45,9 +45,9 @@ Windows Quick-start
 - Ensure JDK 1.7 bin dir is added to the Windows environment PATH. Additionally, ensure JAVA_HOME is defined as a Windows environment variable and pointed to the JDK dir.
 
 #### Steps:
-1. Navigate to the sissvoc-package repo directory.
-2. Execute package-sissvoc-vanilla.bat 
-3. This should produce and package up sissvoc into sissvoc.war which you can deploy in an Application Server such as Tomcat7.
+1. Navigate to the `sissvoc-package` repo directory.
+2. Execute `package-sissvoc-vanilla.bat` 
+3. This should produce and package up sissvoc into `sissvoc.war` which you can deploy in an Application Server such as Tomcat7.
 
 
 Running sissvoc via jetty-runner
