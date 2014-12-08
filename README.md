@@ -47,7 +47,7 @@ Linux Quick-start
    * Use unzip command from command line: `unzip sissvoc-package-master.zip` when in the correct directory or unzip from file explorer.
 2. Navigate to the `sissvoc-package` repo directory.
    * Navigate through the command line: `cd sissvoc-package-master/` if you just used the unzip command, until you are in the extracted file.
-   * Sanity check: the ls command in the cammand line `account@account:~/Downloads/sissvoc-package-master$ ls`should return 
+   * Sanity check: the ls command in the command line `account@account:~/Downloads/sissvoc-package-master$ ls`should return 
 ![alt text](http://i.imgur.com/EIYnvfK.png "output")
 
 3. Run `./package-sissvoc-vanilla.sh`
