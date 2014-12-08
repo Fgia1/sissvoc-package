@@ -20,7 +20,8 @@ cd ..
 curl -L -O https://github.com/jyucsiro/sissvoc/archive/sissvoc-vanilla-v0.2.zip
 unzip sissvoc-vanilla-v0.2.zip
 mv sissvoc-sissvoc-vanilla-v0.2 sissvoc
-cd sissvoc
-cd ..
-bash -c package-sissvoc-vanilla--no-build.sh
+# remove the redundant cd sissvoc and cd .. (no point)
+
+#remove the -c from the line below (was not exucuting when run in the linux environment)
+bash package-sissvoc-vanilla--no-build.sh
 
