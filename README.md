@@ -22,7 +22,7 @@ This is where SISSVoc comes in to play. It creates, for the standard vocabulary 
 
 While it provided this pleasant interface for humans the main aim was focused on machine-machine RDF database interaction. This is so that data providers can use HTTP links to vocabularies, data applications can be configured with standard terminology, and data clients can retrieve definitions or verify the existence of items claimed to be in particular vocabularies.
 
-### Major Assumptions of SISSVoc
+## Major Assumptions of SISSVoc
 
 It is assumed that:
 
@@ -47,7 +47,7 @@ Linux Quick-start
    * Use unzip command from command line: `unzip sissvoc-package-master.zip` when in the correct directory or unzip from file explorer.
 2. Navigate to the `sissvoc-package` repo directory.
    * Navigate through the command line: `cd sissvoc-package-master/` if you just used the unzip command, until you are in the extracted file.
-   * Sanity check: the ls command in the cammand line `account@account:~/Downloads/sissvoc-package-master$ ls`should return 
+   * Sanity check: the ls command in the command line `account@account:~/Downloads/sissvoc-package-master$ ls`should return 
 ![alt text](http://i.imgur.com/EIYnvfK.png "output")
 
 3. Run `./package-sissvoc-vanilla.sh`
@@ -65,14 +65,24 @@ Windows Quick-start
 * python 2.7+
 
 
-#### Notes:
+#### Notes (Must be done before Steps):
 - Git for Windows will include Bash for Windows. Ensure the Git bin is added to the Windows environment PATH (e.g. by going to Control Panel/System and Security/System/Advanced system settings).
 - Ensure Maven bin dir is  added to the Windows environment PATH
 - Ensure JDK 1.7 bin dir is added to the Windows environment PATH. Additionally, ensure JAVA_HOME is defined as a Windows environment variable and pointed to the JDK dir.
 
+##### How to add a bin dir to the Windows environment PATH
+1. Once in the Advanced system settings (Control Panel/System and Security/System/Advanced system settings), select `Environment Variables..`.
+2. Then under System variables, find the variable “PATH” and click edit.  You will be displayed with this screen:
+![alt text](http://i.imgur.com/7eBt9iV.png "Example of adding the Git bin to the PATH variable")
+3. In the variable value add a semicolon on the end of what is already there (;) and then add a bin directory (e.g `C:\Program Files (x86)\Git\bin`) on to the end and click ok. For each bin you must add a new semicolon and then add the bin path/location after it. Do this for Maven, Git and JDK 1.7.  (If there is no PATH variable then you may create a new one omitting the semicolon for the first bin)
+4. The steps to ensure JAVA_HOME is defined as a Windows environment variable and pointed to the JDK dir are very similar. All that is different is that you may have to create a new environmental variable name "JAVA_HOME" and for the variable value add in the location of the JDK dir (e.g `C:\Program Files\Java\jdk1.8.0_25\`).
+
 #### Steps:
 1. Navigate to the `sissvoc-package` repo directory.
+  * Using the `cmd` (access by win key + r and enter cmd, click enter) use `cd **location of your file** \sissvoc-package-master`  ![alt text](http://i.imgur.com/XDJ8ZmK.png "an example")
 2. Execute `package-sissvoc-vanilla.bat` 
+  * Click tab until `package-sissvoc-vanilla.bat` is displayed and click enter.
+  * It will take some time and if successful will display this:![alt text](http://i.imgur.com/dRpO9SW.png "success")
 3. This should produce and package up sissvoc into `sissvoc.war` which you can deploy in an Application Server such as Tomcat7.
 
 
