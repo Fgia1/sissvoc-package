@@ -8,9 +8,9 @@ set -x #echo on
 #mvn package
 #cd ..
 #WORKAROUND FIX - download elda 1.2.35 release and unzip
-curl -L -O https://github.com/epimorphics/elda/archive/elda-1.2.35.zip
-unzip elda-1.2.35.zip
-mv elda-elda-1.2.35 elda
+curl -L -O https://github.com/epimorphics/elda/archive/elda-1.3.1.zip
+unzip elda-1.3.1.zip
+mv elda-elda-1.3.1 elda
 cd elda
 mvn package
 cd ..
