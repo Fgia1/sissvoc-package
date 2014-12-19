@@ -3,7 +3,6 @@
 echo -e "\n STEP 4"
 
 echo -e "\n"
-ls
 
 while true; do
 read -p " Please Note that you must be in the sissvoc-package dir. is this the case? y or n " yn
@@ -45,4 +44,5 @@ bash package-sissvoc-vanilla--no-build.sh
 echo -e "\n\n If the above line says '+ mv sissvoc.war ..' You are now ready to deploy the sissvoc.war file!! \n Congrats! \n\n If you would like to just deploy it locally then you can use this terminal command :  java -jar jar/jetty-runner.jar --path /sissvoc sissvoc.war "
 
 echo -e "\n Then visit the url : http://localhost:8080/sissvoc/meta/api "
-
+echo -e "\n ls : \n"
+ls
